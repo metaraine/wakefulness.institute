@@ -13,6 +13,6 @@ app.get('/', function(req, res) {
 	res.render('index');
 })
 
-var server = app.listen(8419, function() {
+var server = app.listen(process.env.PORT || 8419, function() {
 	console.log('Express server listening on port ' + server.address().port);
 })
