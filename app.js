@@ -1,6 +1,7 @@
 var express = require('express')
 var bodyParser = require('body-parser')
 var favicon = require('serve-favicon')
+var newrelic = require('newrelic')
 
 var app = express()
 app.set('view engine', 'jade')
