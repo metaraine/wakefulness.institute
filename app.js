@@ -1,7 +1,7 @@
 var express = require('express')
 var bodyParser = require('body-parser')
 var favicon = require('serve-favicon')
-var newrelic = require('newrelic')
+require('newrelic')
 
 var app = express()
 app.set('view engine', 'jade')
@@ -12,6 +12,10 @@ app.use(bodyParser());
 
 app.get('/', function(req, res) {
 	res.render('index');
+})
+
+app.get('/what-went-well', function(req, res) {
+	res.render('www');
 })
 
 var server = app.listen(process.env.PORT || 8419, function() {
