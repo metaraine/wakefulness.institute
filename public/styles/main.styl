@@ -1,3 +1,13 @@
+white = #fff
+black = #000
+
+amethyst = #9b59b6
+sunflower = #f1c40f
+asphalt = #34495e
+midnight = #2c2c2d
+river = #3498db
+belize = #2980b9
+
 *
 	box-sizing border-box
 
@@ -10,9 +20,18 @@ body
 	font-family Adamina, Georgia, Serif
 	font-size 20px
 
-p
+p, ul
 	line-height 1.7
 	margin-bottom 1.2em
+
+.hero
+	h1,h2
+		font-family 'Helvetica Neue', Helvetica, Arial, Sans-Serif
+		font-weight 100
+	h1
+		font-size 80px
+	h2
+		font-size 42px
 
 .lead-text
 	font-weight normal
@@ -28,6 +47,13 @@ p
 	width 100%
 	height 100%
 
+.spread-most
+	width 100%
+	height 76%
+
+.wide
+	width 100%
+
 .block
 	display inline-block
 
@@ -40,6 +66,31 @@ p
 
 .pad
 	padding 25px
+.pad-md
+	padding 50px
+.pad-lg
+	padding 100px
+.vpad
+	padding 25px 0
+.vpad-md
+	padding 50px 0
+.vpad-lg
+	padding 100px 0
+
+.space
+	margin 50px
+.space-lg
+	margin 100px
+.space-above
+	margin-top 50px
+.space-above-lg
+	margin-top 100px
+.vspace
+	margin 25px 0
+.vspace-md
+	margin 50px 0
+.vspace-lg
+	margin 100px 0
 
 .splash-title
 	margin-bottom 60px
@@ -54,3 +105,37 @@ p
 
 .text-dim
 	color #b2b2b2
+
+// themes
+.theme-pretty
+	background-color sunflower
+
+.theme-pretty-light
+	background-color lighten(black, 90%)
+
+.theme-dark
+	background-color midnight
+	color white
+	font-family 'Helvetica Neue', Helvetica, Arial, Sans-Serif
+	font-weight 100
+	font-size 24px
+
+// bootstrap overrides
+.btn
+	font-family 'Helvetica Neue', Helvetica, Arial, Sans-Serif
+	font-weight 100
+	font-size 24px
+
+.btn-primary
+	color black
+	background-color sunflower
+	border 0
+	border-bottom solid 5px darken(sunflower,  5%)
+	&:hover
+		color black
+		background-color lighten(sunflower, 15%)
+		border-bottom-color sunflower
+	
+.btn-lg
+	font-size: 32px
+

@@ -1,5 +1,10 @@
 extends layout
 
+//- mixins
+mixin registerButton
+	button.btn.btn-block.btn-lg.btn-primary.vspace-lg Register
+
+//- blocks
 block styles
 	link(rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Adamina')
 
@@ -7,21 +12,68 @@ block title
 	title Wakefulness Institute :: What Went Well Group
 
 block content
+
+	.hero.theme-pretty.center.spread-most
+		div
+			h1.title What Went Well
+			h2.subtitle Google Hangout Group
+
 	.container-narrow.pad
-		p
-			span.lead-text What Went Well
-			| is a simple positive psychology exercise introduced in Martin Seligman's book, "Flourish". It is an evidence-based exercise proven to increase wellbeing. The exercise itself is simple: "Write down three things that went well today and why they went well." You can do the exercise on your own, but we've experienced the most profound effects by performing the exercise in a supportive, collaborative group. 
+		section.vpad-md
+			p
+				span.lead-text What Went Well
+				| is a simple positive psychology exercise introduced in Martin Seligman's book, "Flourish". It is an evidence-based exercise proven to increase wellbeing. The exercise itself is simple: "Write down three things that went well today and why they went well." You can do the exercise on your own, but we've experienced the most profound effects by performing the exercise in a supportive, collaborative group. 
 
-		p Through Google Hangouts, we can make this possible to anyone. We are creating this online support group to share this amazing exercise with those who wish to commit to this practice and get the support they need to make it a successful part of their lives.
+			p Through Google Hangouts, we can make this possible to anyone. We are creating this online support group to share this amazing exercise with those who wish to commit to this practice and get the support they need to make it a successful part of their lives.
 
-		p -Raine &amp; Catia
+				p Read on to find out all the details and 
+					a(href='') register today
+					| .
 
-		h1 Objective
-		p To offer What Went Well in an online environment providing an engaging and expertly facilitated space for those seeking to integrate this practice into their lives and increase their wellbeing.
+	.theme-dark
+		.container-narrow.pad
+			section.vpad-md
+				.row
+					.col-md-6
+						.center.wide
+							div
+								img.img-circle(src='/images/www/raine.jpg')
+								h2 Raine Lourie
+						p.vspace Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum veniam delectus maxime rerum, reprehenderit, aperiam blanditiis, qui inventore odit recusandae sit autem consequuntur, at quibusdam quasi error sunt expedita.
+					.col-md-6
+						.center.wide
+							div
+								img.img-circle(src='/images/www/catia.png')
+								h2 Catia Chien
+						p.vspace Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum veniam delectus maxime rerum, reprehenderit, aperiam blanditiis, qui inventore odit recusandae sit autem consequuntur, at quibusdam quasi error sunt expedita.
 
-		h1 How it works
-		p We will meet on a regular basis online via Google Hangouts, where we can use video chat to create an engaging collaborative experience, in real-time, wherever you are in the world. Sessions will be facilitated by your hosts, Raine and Catia. All that is required is a plus.google.com account and a webcam.	
+	.theme-light
+		.container-narrow.pad
+			section.vpad
 
-		h2 Facilitators
-		img.img-circle(src='/images/www/raine.jpg')
-		img.img-circle(src='/images/www/catia.png')
+				h1 How does the group work?
+				p We will meet via Google Hangout video chat once a week for one month. All you need is a webcam and a Google+/gmail account. Hangouts are 45 minutes long. The video chat is the heart of the practice, where each person shares 2 What Went Wells for the day. The video format gives everyone a chance to be out in the open and create an intimate environment even if we are thousands of miles away! The facilitators ensure a safe space in which nobody is pressured to share anything other than what they are inspired to share.
+
+				p Each day you will be asked to post one What Went Well to a private Google Group. This can be as much or as little as you’d like. It is a small commitment that keeps the practice alive between weekly video chats, and helps you get the most out of the 30 day program.
+
+			section
+				h1 Details
+
+				ul.vspace
+					li Weekly video chat (45 minutes long)
+					li Daily online post (1 or more sentences)
+					li 30 days total
+					li Begins the 3rd week of August (Day will be determined from participants’ availability)
+					li You may choose from 3 contribution levels:
+						ul
+							li Level II: $50
+								ul
+									li A Level II contribution includes the base cost which covers the preparation and work put in by the facilitators, and goes beyond to help someone who has a financial need to participate.
+							li Level I: $35
+								ul
+									li A Level I contribution is the base cost which covers the preparation and work put in by the facilitators.
+							li Scholarship Level: $0-34
+								ul
+									li Scholarships will be awarded upon request, no questions asked. Contribute what you can. Don’t let financial need prevent you from participating in this beneficial practice!
+
+			+registerButton
