@@ -5,12 +5,15 @@ img {
   max-width: 100%;
 }
 body {
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-weight: 300;
+  font-size: 18px;
   color: #121212;
   background-color: #fff;
-  font-family: Adamina, Georgia, Serif;
-  font-size: 20px;
 }
 p {
+  font-family: Adamina, Georgia, Serif;
+  font-size: 20px;
   line-height: 1.7;
   margin-bottom: 1.2em;
 }
@@ -51,8 +54,15 @@ p {
   }
 }
 .splash-subtitle {
-  line-height: 2em;
+  font-family: 'Helvetica Neue';
+  font-weight: 100;
+  color: #000;
+  letter-spacing: 1px;
+  font-size: 18px;
   margin: 0;
+  line-height: 2em;
+  font-size: 15px;
+  line-height: 1.6em;
 }
 .text-dim {
   color: #b2b2b2;
