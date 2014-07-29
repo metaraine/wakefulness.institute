@@ -78,6 +78,11 @@ ul {
 .right {
   float: right;
 }
+@media (-width: 559px) {
+  .www-title-linebreak {
+    display: none;
+  }
+}
 @media (min-width: 992px) {
   .left-sm {
     float: left;
