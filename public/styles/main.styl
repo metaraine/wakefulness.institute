@@ -8,6 +8,13 @@ midnight = #2c2c2d
 river = #3498db
 belize = #2980b9
 
+yellow = rgb(255,189,0)
+grass = rgb(182,237,0)
+
+width-xs = 768px
+width-sm = 992px
+width-md = 1200px
+
 *
 	box-sizing border-box
 
@@ -15,14 +22,30 @@ img
 	max-width 100%
 
 body
-	color #121212
+	color #444
 	background-color #fff
-	font-family Adamina, Georgia, Serif
+	font-family 'Open Sans', Adamina, Georgia, Serif
 	font-size 20px
+
+a
+	color = grass
+	color grass
+
+	&:hover
+		text-decoration none
+		color lighten(color, 15%)
+
+h3
+	margin-top 0
 
 p, ul
 	line-height 1.7
 	margin-bottom 1.2em
+
+.quote
+	font-family 'Helvetica Neue', Helvetica, Arial, Sans-Serif
+	font-size 32px
+	font-weight 100
 
 .hero
 	h1,h2
@@ -34,7 +57,6 @@ p, ul
 		font-size 42px
 
 .lead-text
-	font-weight normal
 	font-size 1.35em
 	letter-spacing 0.2px
 	margin-right 9px
@@ -81,10 +103,19 @@ p, ul
 	margin 50px
 .space-lg
 	margin 100px
+
 .space-above
 	margin-top 50px
 .space-above-lg
 	margin-top 100px
+
+.space-below
+	margin-bottom 25px
+.space-below-md
+	margin-bottom 50px
+.space-below-lg
+	margin-bottom 100px
+
 .vspace
 	margin 25px 0
 .vspace-md
@@ -103,12 +134,39 @@ p, ul
 	line-height 2em
 	margin 0
 
+.subtext
+	font-size 16px
+	text-transform uppercase
+	font-weight bold
+
+.text-sm
+	font-size 16px
+
 .text-dim
 	color #b2b2b2
 
+.text-yellow
+	color yellow
+
+a.text-yellow:hover
+	color lighten(yellow, 15%)
+
+.underlap
+	margin-top -165px
+
+.btn-dark
+	border solid 1px grass
+	background-color transparent
+	color white
+
 // themes
+.theme-pale
+	background-color lighten(black, 90%)
+
 .theme-pretty
-	background-color sunflower
+	// background-color yellow
+	color white
+	background url(/images/www/nature-river.jpg) 0 22%
 
 .theme-pretty-light
 	background-color lighten(black, 90%)
@@ -116,25 +174,30 @@ p, ul
 .theme-dark
 	background-color midnight
 	color white
-	font-family 'Helvetica Neue', Helvetica, Arial, Sans-Serif
-	font-weight 100
-	font-size 24px
+
+.theme-nature1
+	color white
+	background url(/images/www/nature-river.jpg) 0 91%
+
+	@media (max-width: width-md)
+		background-position 0 93%
+
+	@media (max-width: width-sm)
+		background-position 14% 95%
 
 // bootstrap overrides
-.btn
-	font-family 'Helvetica Neue', Helvetica, Arial, Sans-Serif
+.btn-primary
 	font-weight 100
 	font-size 24px
-
-.btn-primary
+	color = grass
 	color black
-	background-color sunflower
+	background-color color
 	border 0
-	border-bottom solid 5px darken(sunflower,  5%)
+	border-bottom solid 5px darken(color,  5%)
 	&:hover
 		color black
-		background-color lighten(sunflower, 15%)
-		border-bottom-color sunflower
+		background-color lighten(color, 15%)
+		border-bottom-color color
 	
 .btn-lg
 	font-size: 32px

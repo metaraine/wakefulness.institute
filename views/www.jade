@@ -1,38 +1,44 @@
 extends layout
 
-//- mixins
-mixin registerButton
-	button.btn.btn-block.btn-lg.btn-primary.vspace-lg Register
-
 //- blocks
 block styles
-	link(rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Adamina')
+	link(rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open Sans:400,700')
+	//- link(rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Adamina')
 
 block title
 	title Wakefulness Institute :: What Went Well Group
 
 block content
 
+	//- hero unit
 	.hero.theme-pretty.center.spread-most
 		div
 			h1.title What Went Well
 			h2.subtitle Google Hangout Group
 
-	.container-narrow.pad
-		section.vpad-md
-			p
-				span.lead-text What Went Well
-				| is a simple positive psychology exercise introduced in Martin Seligman's book, "Flourish". It is an evidence-based exercise proven to increase wellbeing. The exercise itself is simple: "Write down three things that went well today and why they went well." You can do the exercise on your own, but we've experienced the most profound effects by performing the exercise in a supportive, collaborative group. 
+	//- intro
+	.theme-light
+		.container-narrow.pad
+			.vpad-md
 
-			p Through Google Hangouts, we can make this possible to anyone. We are creating this online support group to share this amazing exercise with those who wish to commit to this practice and get the support they need to make it a successful part of their lives.
+				.center.wide.space-below-md
+					div
+						img(src='/images/www/hangouts-green.png' width='100')
 
-				p Read on to find out all the details and 
-					a(href='') register today
-					| .
+				p
+					span.lead-text What Went Well
+					| is a simple positive psychology exercise introduced in Martin Seligman's book, "Flourish". It is an evidence-based exercise proven to increase wellbeing. The exercise itself is simple: "Write down three things that went well today and why they went well." You can do the exercise on your own, but we've experienced the most profound effects by performing the exercise in a supportive, collaborative group. 
 
+				p Through Google Hangouts, we can make this possible to anyone. We are creating this online support group to share this amazing exercise with those who wish to commit to this practice and get the support they need to make it a successful part of their lives.
+
+					p Read on to find out all the details and 
+						a(href='') register today
+						| .
+
+	//- facilitators
 	.theme-dark
 		.container-narrow.pad
-			section.vpad-md
+			.vpad-md
 				.row
 					.col-md-6
 						.center.wide
@@ -47,33 +53,84 @@ block content
 								h2 Catia Chien
 						p.vspace Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum veniam delectus maxime rerum, reprehenderit, aperiam blanditiis, qui inventore odit recusandae sit autem consequuntur, at quibusdam quasi error sunt expedita.
 
+	//- quote
+	.theme-nature1
+		.container-narrow.pad
+			.vpad-lg
+				.quote
+					q A pessimist sees the difficulty in every opportunity; an optimist sees the opportunity in every difficulty.
+					br
+					| -Winston Churchill
+
+	//- details
 	.theme-light
 		.container-narrow.pad
-			section.vpad
+			.vpad
 
 				h1 How does the group work?
 				p We will meet via Google Hangout video chat once a week for one month. All you need is a webcam and a Google+/gmail account. Hangouts are 45 minutes long. The video chat is the heart of the practice, where each person shares 2 What Went Wells for the day. The video format gives everyone a chance to be out in the open and create an intimate environment even if we are thousands of miles away! The facilitators ensure a safe space in which nobody is pressured to share anything other than what they are inspired to share.
 
 				p Each day you will be asked to post one What Went Well to a private Google Group. This can be as much or as little as you’d like. It is a small commitment that keeps the practice alive between weekly video chats, and helps you get the most out of the 30 day program.
 
-			section
-				h1 Details
+	.theme-pale
+		.container-narrow.vpad-md
+			.row
+				.col-md-6
+					.center.wide.space-below
+						div
+							img(src='/images/www/icon-hangouts-gray.png' height='100')
+							h2.subtext Format
+					ul
+						li Weekly video chat (45 minutes long)
+						li Daily online post (1 or more sentences)
+				.col-md-6
+					.center.wide.space-below
+						div
+							img(src='/images/www/icon-calendar.png' height='100')
+							h2.subtext Time
+					ul
+						li 30 days total
+						li Begins the 3rd week of August (Day will be determined from participants’ availability)
 
-				ul.vspace
-					li Weekly video chat (45 minutes long)
-					li Daily online post (1 or more sentences)
-					li 30 days total
-					li Begins the 3rd week of August (Day will be determined from participants’ availability)
-					li You may choose from 3 contribution levels:
-						ul
-							li Level II: $50
-								ul
-									li A Level II contribution includes the base cost which covers the preparation and work put in by the facilitators, and goes beyond to help someone who has a financial need to participate.
-							li Level I: $35
-								ul
-									li A Level I contribution is the base cost which covers the preparation and work put in by the facilitators.
-							li Scholarship Level: $0-34
-								ul
-									li Scholarships will be awarded upon request, no questions asked. Contribute what you can. Don’t let financial need prevent you from participating in this beneficial practice!
+	.theme-light
+		.pad
+			.container-narrow.vpad-md
 
-			+registerButton
+				h1 Price
+				p Choose the level of contribution that is most appropriate for you:
+				.row
+					.col-md-4
+						h3 Level II: $50
+						p.text-sm A Level II contribution includes the base cost which covers the preparation and work put in by the facilitators, and goes beyond to help someone who has a financial need to participate.
+					.col-md-4
+						h3 Level I: $35
+						p.text-sm A Level I contribution is the base cost which covers the preparation and work put in by the facilitators.
+					.col-md-4
+						h3 Scholarship: $0-34
+						p.text-sm Scholarships will be awarded upon request, no questions asked. Contribute what you can. Don’t let financial need prevent you from participating in this beneficial practice!
+
+				button.btn.btn-block.btn-lg.btn-primary.vspace-md Register
+
+	//- footer
+	.theme-dark
+		.container
+			.vpad-md
+				.row
+					.col-md-4
+						p Brought to you by the 
+							br
+							a.text-yellow(href='/') Wakefulness Institute
+					.col-md-4
+						p Can't make it this time? Get contacted about the next group:
+						form
+							.row
+								.col-xs-8
+									.form-group
+										input.form-control(type='text' placeholder='Email')
+								.col-xs-4
+									button.btn.btn-dark.btn-block Submit
+					.col-md-3.col-md-offset-1
+						h3 Contact
+						ul.list-unstyled
+							li: a(href='mailto:raine@clarityofheart.com') raine@clarityofheart.com
+							li: a(href='mailto:raine@clarityofheart.com') catiachien@gmail.com
