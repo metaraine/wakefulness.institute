@@ -41,7 +41,7 @@ ul {
 .hero h2 {
   font-size: 42px;
 }
-.lead-text {
+.text-lead {
   font-size: 1.35em;
   letter-spacing: 0.2px;
   margin-right: 9px;
@@ -72,6 +72,12 @@ ul {
   vertical-align: middle;
   text-align: center;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 .pad {
   padding: 25px;
 }
@@ -97,6 +103,9 @@ ul {
   margin: 100px;
 }
 .space-above {
+  margin-top: 25px;
+}
+.space-above-md {
   margin-top: 50px;
 }
 .space-above-lg {
@@ -132,7 +141,7 @@ ul {
   line-height: 2em;
   margin: 0;
 }
-.subtext {
+.text-caption {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
@@ -149,8 +158,8 @@ ul {
 a.text-yellow:hover {
   color: #ffc726;
 }
-.underlap {
-  margin-top: -165px;
+.list-wide li {
+  margin-bottom: 10px;
 }
 .btn-dark {
   border: solid 1px #b6ed00;
@@ -183,6 +192,11 @@ a.text-yellow:hover {
 @media (max-width: 992px) {
   .theme-nature1 {
     background-position: 14% 95%;
+  }
+}
+@media (max-width: 768px) {
+  .theme-nature1 {
+    background-position: 16% 100%;
   }
 }
 .btn-primary {
