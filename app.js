@@ -8,7 +8,7 @@ app.set('view engine', 'jade')
 app.set('views', __dirname + '/views')
 app.use(express.static(__dirname + '/public'))
 app.use(favicon(__dirname + '/public/favicon.ico'))
-app.use(bodyParser());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', function(req, res) {
 	res.render('index');
