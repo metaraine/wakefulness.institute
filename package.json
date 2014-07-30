@@ -1,4 +1,16 @@
 {
+  "name": "wakefulness.institute",
+  "version": "0.0.0",
+  "description": "The Wakefulness Institute",
+  "repository": "metaraine/wakefulness.institute",
+  "author": {
+    "name": "Raine Lourie",
+    "email": "raine@wakefulness.institute",
+    "url": "https://wakefulness.institute"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "dependencies": {
     "body-parser": "^1",
     "express": "^4",
