@@ -2,7 +2,7 @@ extends layout
 
 //- blocks
 block styles
-	link(rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open Sans')
+	link(rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open Sans:300')
 
 block title
 	title Wakefulness Institute :: What Went Well Group
@@ -19,133 +19,140 @@ block content
 
 	//- intro
 	.theme-light
-		.container-narrow.pad
-			.vpad-md
+		.container-narrow.pad.vpad-lg
 
-				//- .center.wide.space-below-md: div
-					img(src='/images/www/hangouts-green.png' width='100')
+			//- .center.wide.space-below-md: div
+				img(src='/images/www/hangouts-green.png' width='100')
 
-				p
-					span.text-lead What Went Well
-					| is a simple positive psychology exercise introduced in Martin Seligman's book, "Flourish". It is an evidence-based exercise proven to increase wellbeing. The exercise itself is simple: "Write down three things that went well today and why they went well." You can do the exercise on your own, but we've experienced the most profound effects by performing the exercise in a supportive, collaborative group. 
+			p
+				span.text-lead What Went Well
+				| is a simple positive psychology exercise introduced in Martin Seligman's book, "Flourish." It is an evidence-based exercise proven to increase wellbeing.
 
-				p Through Google Hangouts, we can make this possible to anyone. We are creating this online support group to share this amazing exercise with those who wish to commit to this practice and get the support they need to make it a successful part of their lives.
-
-	//- facilitators
-	.theme-dark
-		.container-narrow.pad
-			.vpad-md
-
-				.center.wide
-					h1 Learn about the facilitators
-
-				.row.space-above-md
-
-					.col-sm-6
-						.center.wide: div
-							img.img-circle(src='/images/www/raine.jpg')
-							h2.text-caption Raine Lourie
-						p.text-sm.vspace Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum veniam delectus maxime rerum, reprehenderit, aperiam blanditiis, qui inventore odit recusandae sit autem consequuntur, at quibusdam quasi error sunt expedita.
-
-					.col-sm-6
-						.visible-xs: .space-above-lg
-						.center.wide: div
-							img.img-circle(src='/images/www/catia.png')
-							h2.text-caption Catia Chien
-						p.text-sm.vspace Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laborum veniam delectus maxime rerum, reprehenderit, aperiam blanditiis, qui inventore odit recusandae sit autem consequuntur, at quibusdam quasi error sunt expedita.
-
-	//- quote
-	.theme-nature1
-		.container-narrow.pad
-			.vpad-lg
-				.quote
-					q A pessimist sees the difficulty in every opportunity; an optimist sees the opportunity in every difficulty.
-					br
-					| -Winston Churchill
-
-	//- details
-	.theme-light
-		.container-narrow.pad
-			.vpad
-
-				h1 How does the group work?
-				p We will meet via Google Hangout video chat once a week for one month. All you need is a webcam and a Google+/gmail account. Hangouts are 45 minutes long. The video chat is the heart of the practice, where each person shares 2 What Went Wells for the day. The video format gives everyone a chance to be out in the open and create an intimate environment even if we are thousands of miles away! The facilitators ensure a safe space in which nobody is pressured to share anything other than what they are inspired to share.
-
-				p Each day you will be asked to post one What Went Well to a private Google Group. This can be as much or as little as you’d like. It is a small commitment that keeps the practice alive between weekly video chats, and helps you get the most out of the 30 day program.
+			p The 30-day What Went Well Google Hangout Group lets you experience this exercise in a facilitated group setting from anywhere through weekly video chats.
 
 	//- format & dates
 	.theme-pale
 		.container-narrow.vpad-md
 			.row
-				.col-md-6
+				.col-sm-6
 					.center.wide.space-below: div
 						img(src='/images/www/icon-hangouts-gray.png' height='100')
 						h2.text-caption Format
 					ul.list-wide
 						li Weekly video chat
-							.text-sm 45 minutes long
+							.text-sm 45 minutes
 						li Daily online post
-							.text-sm Brief WWW for the day
-				.col-md-6
+							.text-sm 1-sentence What Went Well
+				.col-sm-6
 					.visible-xs: .space-above-lg
 					.center.wide.space-below: div
-						img(src='/images/www/icon-calendar.png' height='100')
+						img(src='/images/www/icon-calendar-gray.png' height='100')
 						h2.text-caption Dates
 					ul.list-wide
 						li Begins the 3rd week of August 
-							.text-sm Day-of-the-week to be determined
+							.text-sm Day-of-the-week TBD
 						li 30 days total
 
-	//- price
+	//- facilitators
+	.theme-dark
+		.container-narrow.pad.vpad-md
+
+			.center.wide
+				h1 Learn about the facilitators
+
+			.row.space-above-md
+
+				.col-sm-6
+					.center.wide: div
+						img.img-circle.border-gray(src='/images/www/avatar-raine.jpg' height='200')
+						h2.text-caption Raine Lourie
+					p.text-sm.vspace Raine is a teacher, facilitator, and meditation practitioner. He promotes transpersonal growth, depth, and awareness though journaling workshops and contemplative social events. He currently stewards the Wakefulness Institute and is pursuing his M.A. in Contemplative Psychotherapy at Naropa University.
+
+				.col-sm-6
+					.visible-xs: .space-above-lg
+					.center.wide: div
+						img.img-circle.border-gray(src='/images/www/avatar-catia.png' height='200')
+						h2.text-caption Catia Chien
+					p.text-sm.vspace Catia Chien is a full time illustrator for children's books in NYC. She is an advocate of literacy rights and in 2012 traveled to Sri Lanka with non-profit literacy organization Room to Read to teach narrative story telling and artistic voice workshops. She graduated from Art Center College of Design in Pasadena, CA, with honors in 2004.
+
+	//- quote
+	.theme-nature1
+		.container-narrow.pad.vpad-lg
+			.quote
+				q A pessimist sees the difficulty in every opportunity; an optimist sees the opportunity in every difficulty.
+				br
+				| -Winston Churchill
+
+	//- details
 	.theme-light
-		.pad
-			.container-narrow.vpad-md
+		.container-narrow.pad.vpad
 
-				h1 Price
-				p Choose the level of contribution that is most appropriate for you:
+			h1 What is What Went Well?
+			p The exercise itself is simple: "Write down three things that went well today and why they went well." You can do the exercise on your own, but we've experienced the most profound effects by performing the exercise in a supportive, collaborative group. 
 
-				.vspace-md
-					.row
-						.col-md-4
-							h3 Level II: $50
-							p.text-sm A Level II contribution includes the base cost which covers the preparation and work put in by the facilitators, and goes beyond to help someone who has a financial need to participate.
-						.col-md-4
-							h3 Level I: $35
-							p.text-sm A Level I contribution is the base cost which covers the preparation and work put in by the facilitators.
-						.col-md-4
-							h3 Scholarship: $0-34
-							p.text-sm Scholarships will be awarded upon request, no questions asked. Contribute what you can. Don’t let financial need prevent you from participating in this beneficial practice!
+			h1 How do the video chats work?
+			p We will meet via Google Hangout video chat once a week for one month. All you need is a webcam and a Google+/gmail account. Hangouts are 45 minutes long. The video chat is the heart of the practice, where each person shares 2 What Went Wells for the day. The facilitators ensure a space where everyone feels safe to share whatever they like.
 
-					button.btn.btn-block.btn-lg.btn-primary.vspace-md Register
+			p Each day you will be asked to post one What Went Well to a private Google Group. This can be as much or as little as you’d like. It is a small commitment that keeps the practice alive between weekly video chats, and helps you get the most out of the 30 day program.
+
+			h1 Price
+			p Choose the level of contribution that is most appropriate for you:
+
+			.row
+				.col-md-4
+					h3 Level II: $50
+					p.text-sm A Level II contribution includes the base cost which covers the preparation and work put in by the facilitators, and goes beyond to help someone who has a financial need to participate.
+				.col-md-4
+					h3 Level I: $35
+					p.text-sm A Level I contribution is the base cost which covers the preparation and work put in by the facilitators.
+				.col-md-4
+					h3 Scholarship: $0-34
+					p.text-sm Scholarships will be awarded upon request, no questions asked. Contribute what you can. Don’t let financial need prevent you from participating in this beneficial practice!
+
+			.center.wide.space-above-md
+				h1 Starts the 3<sup>rd</sup> week of August, 2014!
+
+			button.btn.btn-block.btn-lg.btn-primary.vspace-md Register
+
+	.theme-pale.text-sm
+		.container-narrow.vpad-md.pad
+			p Can't make it this time? 
+				br.visible-xs
+				| Get contacted about the next group:
+			form
+				.row
+					.col-xs-8
+						.form-group
+							input.form-control(type='text' placeholder='Enter Your Email')
+					.col-xs-4
+						button.btn.btn-block Submit
 
 	//- footer
 	.theme-dark.text-sm
-		.container
-			.vpad-md
-				.row
+		.container.vpad
+			.row
 
-					.col-md-3
-						p Brought to you by the 
-							br
-							a.text-yellow(href='/') Wakefulness Institute
+				.col-md-6
+					p.nospace A contemplative social event by 
+						a.text-yellow(href='/') The Wakefulness Institute
 
-					.col-md-6
-						.hidden-md.hidden-lg: .space-above-md
-						p Can't make it this time? 
-							br.visible-xs
-							| Get contacted about the next group:
-						form
-							.row
-								.col-xs-8
-									.form-group
-										input.form-control(type='text' placeholder='Enter Your Email')
-								.col-xs-4
-									button.btn.btn-dark.btn-block Submit
+				//- .col-md-6
+					//- .hidden-md.hidden-lg: .space-above-md
+					//- p Can't make it this time? 
+					//- 	br.visible-xs
+					//- 	| Get contacted about the next group:
+					//- form
+					//- 	.row
+					//- 		.col-xs-8
+					//- 			.form-group
+					//- 				input.form-control(type='text' placeholder='Enter Your Email')
+					//- 		.col-xs-4
+					//- 			button.btn.btn-dark.btn-block Submit
 
-					.col-md-3
-						.hidden-md.hidden-lg: .space-above-md
-						.right-sm
-							h3 Contact
-							ul.list-unstyled
-								li: a(href='mailto:raine@clarityofheart.com') raine@clarityofheart.com
-								li: a(href='mailto:raine@clarityofheart.com') catiachien@gmail.com
+				.col-md-6
+					.hidden-md.hidden-lg: .space-above
+					.right-sm
+						p.nospace Questions? &nbsp;&nbsp;&nbsp;
+							a(href='mailto:raine@clarityofheart.com') raine@clarityofheart.com
+							|  &middot; 
+							a(href='mailto:raine@clarityofheart.com') catiachien@gmail.com
