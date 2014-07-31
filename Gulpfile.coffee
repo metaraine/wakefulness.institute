@@ -1,8 +1,9 @@
 gulp =       require 'gulp'
 stylus =     require 'gulp-stylus'
 livereload = require 'gulp-livereload'
+nib = 			 require 'nib'
 
-paths = 	
+paths =
 	views: 			'views/**'
 	js: 				'publi/**/.js'
 	stylus: 		'public/styles/**/*.styl'
@@ -13,7 +14,7 @@ paths =
 
 gulp.task 'styles', ()->
 	gulp.src(paths.stylus)
-		.pipe(stylus())
+		.pipe(stylus({use: [nib()]}))
 		.pipe(gulp.dest(paths.cssOutput))
 		.pipe(livereload())
 
