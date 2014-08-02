@@ -216,6 +216,14 @@ a.text-yellow:hover {
   color: #fff;
   background: url("/images/www/nature-river.jpg") 0 22%;
 }
+@media (min-width: 990px) {
+  .theme-pretty {
+    background-image: url("/images/www/nature-river@2x.jpg");
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+  }
+}
 .theme-pretty-light {
   background-color: #e6e6e6;
 }
@@ -226,6 +234,11 @@ a.text-yellow:hover {
 .theme-nature1 {
   color: #fff;
   background: url("/images/www/nature-river.jpg") 0 91%;
+}
+@media (min-width: 990px) {
+  .theme-nature1 {
+    background-image: url("/images/www/nature-river@2x.jpg");
+  }
 }
 @media (max-width: 1200px) {
   .theme-nature1 {

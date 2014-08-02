@@ -209,9 +209,13 @@ a.text-yellow:hover
 	background-color gray(90)
 
 .theme-pretty
-	// background-color yellow
+	imageWidth = 990px
 	color white
 	background url(/images/www/nature-river.jpg) 0 22%
+
+	@media (min-width: imageWidth)
+		background-image url(/images/www/nature-river@2x.jpg)
+		background-size 100%
 
 .theme-pretty-light
 	background-color gray(90)
@@ -221,8 +225,13 @@ a.text-yellow:hover
 	color white
 
 .theme-nature1
+	imageWidth = 990px
+	imageWidthTwoThirds = imageWidth*2/3
 	color white
 	background url(/images/www/nature-river.jpg) 0 91%
+
+	@media (min-width: imageWidth)
+		background-image url(/images/www/nature-river@2x.jpg)
 
 	@media (max-width: width-md)
 		background-position 0 93%
