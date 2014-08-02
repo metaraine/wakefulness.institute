@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
 })
 
 app.get('/what-went-well', function(req, res) {
-	res.render('www');
+	res.render('www/index');
 })
 
 var server = app.listen(process.env.PORT || 8419, function() {

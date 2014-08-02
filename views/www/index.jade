@@ -1,4 +1,4 @@
-extends layout
+extends ../layout
 
 //- blocks
 block styles
@@ -8,6 +8,8 @@ block title
 	title Wakefulness Institute :: What Went Well Group
 
 block content
+	include paypal-button
+
 
 	//- hero unit
 	.hero.theme-pretty.center.spread-most
@@ -113,7 +115,8 @@ block content
 				h1 Starts the 3<sup>rd</sup> week of August, 2014!
 				p.text-sm Exact meeting time will be based on participants' availability.
 
-			button.btn.btn-block.btn-lg.btn-primary.vspace-md Register
+			//- button.btn.btn-block.btn-lg.btn-primary.vspace-md Register
+			+paypal('Register')
 
 	.theme-pale.text-sm
 		.container-narrow.vpad-md.pad
