@@ -1,6 +1,7 @@
-var express = require('express')
+var express =    require('express')
 var bodyParser = require('body-parser')
-var favicon = require('serve-favicon')
+var favicon =    require('serve-favicon')
+var routeMirror = require('route-mirror')
 require('newrelic')
 
 var app = express()
@@ -10,11 +11,15 @@ app.use(express.static(__dirname + '/public'))
 app.use(favicon(__dirname + '/public/favicon.ico'))
 app.use(bodyParser.urlencoded({ extended: false }));
 
+var mirror = routeMirror(app, function(url) {
+	return url.replace(/-/g, '')
+})
+
 app.get('/', function(req, res) {
 	res.render('index');
 })
 
-app.get('/what-went-well', function(req, res) {
+mirror.get('/what-went-well', function(req, res) {
 	res.render('www/index');
 })
 
