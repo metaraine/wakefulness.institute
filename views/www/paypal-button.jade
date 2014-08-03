@@ -4,22 +4,22 @@ mixin paypal(buttontext)
 		input(type='hidden' name='hosted_button_id' value='HR483Z8UVFDBU')
 		input(type='hidden' name='currency_code' value='USD')
 		input(type='hidden' name='page_style' value='WhatWentWell')
-		input(type='hidden' name='on0' value='Contribution Level')
+		input(type='hidden' name='on0' value='Level')
 
 
 		.pad.vspace: .theme-highlight.row.pad
 			.col-xs-4
 				h4 Contribution Level
 				select.wide(name='os0')
-					option(value='Level II') Level II $50.00 USD
-					option(value='Level I' selected) Level I $35.00 USD
-					option(value='Scholarship') Scholarship $30.00 USD
-					option(value='Scholarship') Scholarship $25.00 USD
-					option(value='Scholarship') Scholarship $20.00 USD
-					option(value='Scholarship') Scholarship $15.00 USD
-					option(value='Scholarship') Scholarship $10.00 USD
-					option(value='Scholarship') Scholarship $5.00 USD
-					option(value='Scholarship') Scholarship $0.00 USD
+					option(value='II') Level II $50.00 USD
+					option(value='I' selected) Level I $35.00 USD
+					option(value='Scholarship (30)') Scholarship $30.00 USD
+					option(value='Scholarship (25)') Scholarship $25.00 USD
+					option(value='Scholarship (20)') Scholarship $20.00 USD
+					option(value='Scholarship (15)') Scholarship $15.00 USD
+					option(value='Scholarship (10)') Scholarship $10.00 USD
+					option(value='Scholarship (5)') Scholarship $5.00 USD
+					option(value='Scholarship (0)') Scholarship $0.01 USD
 
 			.col-xs-8
 				//- input(type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif' border='0' name='submit' alt='PayPal - The safer easier way to pay online!')
