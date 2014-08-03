@@ -266,6 +266,12 @@ a.text-yellow:focus {
 .theme-highlight {
   background-color: #efffbb;
 }
+.sprite-avatar-raine.img-circle {
+  background-position: -6px -403px;
+}
+.sprite-avatar-catia.img-circle {
+  background-position: -6px -200px;
+}
 .btn-primary {
   font-weight: 100;
   font-size: 24px;

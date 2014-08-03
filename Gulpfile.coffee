@@ -13,19 +13,21 @@ paths =
 	cssOutput:	'public/styles'
 	images: 		'public/images'
 	wwwImages:  'public/images/www'
-	wwwSprites: 'public/images/www/sprites'
+	wwwSpriteUrl:  '/images/www/sprite.png'
+	wwwSprites: 'public/images/www/sprites/*.png'
 
-gulp.stask 'sprites', ()->
+gulp.task 'sprites', ()->
 	spriteData = gulp.src(paths.wwwSprites)
 		.pipe spritesmith
 			imgName: 'sprite.png'
-			cssName: 'sprite.css'
+			imgPath: paths.wwwSpriteUrl
+			cssName: 'wwwSprite.css'
+			cssOpts:
+				cssClass: (item)->
+					'.sprite-' + item.name
 
-	spriteData.img.pipe
-		gulp.dest paths.wwwImages
-
-	spriteData.css.pipe
-		gulp.dest paths.cssOutput
+	spriteData.img.pipe gulp.dest paths.wwwImages
+	spriteData.css.pipe gulp.dest paths.cssOutput
 
 gulp.task 'styles', ()->
 	gulp.src(paths.stylus)
@@ -52,6 +54,7 @@ gulp.task 'watch', ()->
 
 	# styles
 	gulp.watch(paths.stylus, ['styles'])
+	gulp.watch(paths.wwwSprites, ['sprites'])
 
 	# coffee
 	# gulp.watch(path.js, ['coffee'])

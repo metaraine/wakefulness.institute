@@ -3,6 +3,7 @@ extends ../layout
 //- blocks
 block styles
 	link(rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open Sans:300')
+	link(rel='stylesheet' type='text/css' href='/styles/wwwSprite.css')
 
 block title
 	title Wakefulness Institute :: What Went Well Group
@@ -38,7 +39,7 @@ block content
 			.row
 				.col-sm-6
 					.center.wide.space-below: div
-						img(src='/images/www/icon-hangouts-gray.png' height='100')
+						.sprite-icon-hangouts-gray.block
 						h2.text-caption Format
 					ul.list-wide
 						li Weekly video chat
@@ -48,7 +49,7 @@ block content
 				.col-sm-6
 					.visible-xs: .space-above-lg
 					.center.wide.space-below: div
-						img(src='/images/www/icon-calendar-gray.png' height='100')
+						.sprite-icon-calendar-gray.block
 						h2.text-caption Dates
 					ul.list-wide
 						li Begins the 3rd week of August 
@@ -66,14 +67,14 @@ block content
 
 				.col-sm-6
 					.center.wide: div
-						img.img-circle.border-gray(src='/images/www/avatar-raine.jpg' height='200')
+						.sprite-avatar-raine.img-circle.border-gray.block
 						h2.text-caption Raine Lourie
 					p.text-sm.vspace Raine is a teacher, facilitator, and meditation practitioner. He promotes transpersonal growth, depth, and awareness though journaling workshops and contemplative social events. He currently stewards the Wakefulness Institute and is pursuing his M.A. in Contemplative Psychotherapy at Naropa University.
 
 				.col-sm-6
 					.visible-xs: .space-above-lg
 					.center.wide: div
-						img.img-circle.border-gray(src='/images/www/avatar-catia.png' height='200')
+						.sprite-avatar-catia.img-circle.border-gray.block
 						h2.text-caption Catia Chien
 					p.text-sm.vspace Catia Chien is a full time illustrator for children's books in NYC. She is an advocate of literacy rights and in 2012 traveled to Sri Lanka with non-profit literacy organization Room to Read to teach narrative story telling and artistic voice workshops. She graduated from Art Center College of Design in Pasadena, CA, with honors in 2004.
 

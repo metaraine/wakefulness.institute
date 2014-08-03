@@ -1,0 +1,31 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<i class="icon-home"></i>
+```
+*/
+.sprite-avatar-catia {
+  background-image: url(/images/www/sprite.png);
+  background-position: 0px -200px;
+  width: 200px;
+  height: 200px;
+}
+.sprite-avatar-raine {
+  background-image: url(/images/www/sprite.png);
+  background-position: 0px -400px;
+  width: 200px;
+  height: 200px;
+}
+.sprite-icon-calendar-gray {
+  background-image: url(/images/www/sprite.png);
+  background-position: 0px 0px;
+  width: 100px;
+  height: 100px;
+}
+.sprite-icon-hangouts-gray {
+  background-image: url(/images/www/sprite.png);
+  background-position: 0px -100px;
+  width: 103px;
+  height: 100px;
+}
