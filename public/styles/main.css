@@ -15,9 +15,11 @@ body {
 a {
   color: #b6ed00;
 }
-a:hover {
+a:hover,
+a:focus {
   text-decoration: none;
   color: #c9ff17;
+  outline-color: #c9ff17;
 }
 h1 {
   margin-top: 50px;
@@ -193,8 +195,11 @@ h5.text-caption {
 .text-yellow {
   color: #ffbd00;
 }
-a.text-yellow:hover {
-  color: #ffc726;
+a.text-yellow:hover,
+a.text-yellow:focus {
+  color: #ffca33;
+  outline-color: #ffca33;
+  text-decoration: none;
 }
 .list-wide li {
   margin-bottom: 10px;
@@ -273,6 +278,16 @@ a.text-yellow:hover {
   color: #000;
   background-color: #c9ff17;
   border-bottom-color: #b6ed00;
+}
+.btn-primary:active {
+  color: #000;
+  border-bottom-color: #b6ed00;
+}
+.btn-primary:focus {
+  color: #000;
+  background-color: #b6ed00;
+  border-bottom-color: #ade100;
+  outline-color: #9bc900;
 }
 .btn-lg {
   font-size: 32px;
