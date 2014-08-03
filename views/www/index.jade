@@ -116,7 +116,6 @@ block content
 				h1 Starts the 3<sup>rd</sup> week of August, 2014!
 				p.text-sm Exact meeting time will be based on participants' availability.
 
-			//- button.btn.btn-block.btn-lg.btn-primary.vspace-md Register
 			+paypal('Register')
 
 	.theme-pale.text-sm
@@ -124,12 +123,14 @@ block content
 			p Can't make it this time? 
 				br.visible-xs
 				| Get contacted about the next group:
-			form
+			form(action='//institute.us8.list-manage.com/subscribe/post?u=7ee4ab397f3a604f4299bdeaa&id=252665f9ef', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
 				.row
 					.col-xs-8
 						.form-group
-							input.form-control(type='text' placeholder='Enter Your Email')
+							input.form-control(type='email' placeholder='Enter Your Email' name='EMAIL' required)
 					.col-xs-4
+						div(style='position: absolute; left: -5000px;')
+							input(type='text' name='b_7ee4ab397f3a604f4299bdeaa_252665f9ef' tabindex='-1' value='')
 						button.btn.btn-block Submit
 
 	//- footer
@@ -140,19 +141,6 @@ block content
 				.col-md-6
 					p.nospace A contemplative social event by 
 						a.text-yellow(href='/') The Wakefulness Institute
-
-				//- .col-md-6
-					//- .hidden-md.hidden-lg: .space-above-md
-					//- p Can't make it this time? 
-					//- 	br.visible-xs
-					//- 	| Get contacted about the next group:
-					//- form
-					//- 	.row
-					//- 		.col-xs-8
-					//- 			.form-group
-					//- 				input.form-control(type='text' placeholder='Enter Your Email')
-					//- 		.col-xs-4
-					//- 			button.btn.btn-dark.btn-block Submit
 
 				.col-md-6
 					.hidden-md.hidden-lg: .space-above
