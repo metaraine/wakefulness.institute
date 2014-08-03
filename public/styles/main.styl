@@ -1,25 +1,22 @@
 @import nib
 
+// colors
 white = #fff
 black = #000
 
-amethyst = #9b59b6
-sunflower = #f1c40f
-asphalt = #34495e
-midnight = #2c2c2d
-river = #3498db
-belize = #2980b9
-
+midnight =  #2c2c2d
 yellow = rgb(255,189,0)
 grass = rgb(182,237,0)
 
 gray(amount)
 	hsl(0,0,amount + '%')
 
+// constants
 width-xs = 768px
 width-sm = 992px
 width-md = 1200px
 
+// defaults
 *
 	box-sizing border-box
 
@@ -114,47 +111,39 @@ p, ul
 	.right-sm
 		float right
 
-.pad
-	padding 25px
-.pad-md
-	padding 50px
-.pad-lg
-	padding 100px
-.vpad
-	padding-top 25px
-	padding-bottom 25px
-.vpad-md
-	padding-top 50px
-	padding-bottom 50px
-.vpad-lg
-	padding-top 100px
-	padding-bottom 100px
+// Using the given class prefix, generates 4 different classes for 4 different sizes
+// of the given properties
+//
+//  e.g. sizes(pad, padding) generates:
+//
+// 	.pad-sm {
+// 	  padding: 15px;
+// 	}
+// 	.pad {
+// 	  padding: 25px;
+// 	}
+// 	.pad-md {
+// 	  padding: 50px;
+// 	}
+// 	.pad-lg {
+// 	  padding: 100px;
+// 	}
+sizes(classPrefix, props...)
+	sizeValues = -sm 15px,
+						 '' 25px,
+						 -md 50px,
+						 -lg 100px
+	for pair in sizeValues
+		.{classPrefix}{pair[0]}
+			for prop in props
+				{prop} pair[1]
 
-.space
-	margin 50px
-.space-lg
-	margin 100px
-
-.space-above
-	margin-top 25px
-.space-above-md
-	margin-top 50px
-.space-above-lg
-	margin-top 100px
-
-.space-below
-	margin-bottom 25px
-.space-below-md
-	margin-bottom 50px
-.space-below-lg
-	margin-bottom 100px
-
-.vspace
-	margin 25px 0
-.vspace-md
-	margin 50px 0
-.vspace-lg
-	margin 100px 0
+sizes(pad, padding)
+sizes(space, margin)
+sizes(vpad, padding-top, padding-bottom)
+sizes(vspace, margin-top, margin-bottom)
+sizes(space-above, margin-top)
+sizes(space-below, margin-bottom)
 
 .nospace
 	margin 0
