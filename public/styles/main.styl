@@ -132,7 +132,8 @@ sizes(classPrefix, props...)
 	sizeValues = -sm 15px,
 						 '' 25px,
 						 -md 50px,
-						 -lg 100px
+						 -lg 100px,
+						 -xl 200px
 	for pair in sizeValues
 		.{classPrefix}{pair[0]}
 			for prop in props
@@ -181,6 +182,15 @@ a.text-yellow
 	&:hover, &:focus
 		color lighten(yellow, 20%)
 		outline-color lighten(yellow, 20%)
+		text-decoration none
+
+.text-darkgreen
+	color darken(grass, 20%)
+
+a.text-darkgreen
+	&:hover, &:focus
+		color darken(grass, 30%)
+		outline-color darken(grass, 30%)
 		text-decoration none
 
 .list-wide li

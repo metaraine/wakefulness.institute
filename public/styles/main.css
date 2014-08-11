@@ -117,6 +117,9 @@ ul {
 .pad-lg {
   padding: 100px;
 }
+.pad-xl {
+  padding: 200px;
+}
 .space-sm {
   margin: 15px;
 }
@@ -128,6 +131,9 @@ ul {
 }
 .space-lg {
   margin: 100px;
+}
+.space-xl {
+  margin: 200px;
 }
 .vpad-sm {
   padding-top: 15px;
@@ -145,6 +151,10 @@ ul {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.vpad-xl {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .vspace-sm {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -161,6 +171,10 @@ ul {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+.vspace-xl {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
 .space-above-sm {
   margin-top: 15px;
 }
@@ -173,6 +187,9 @@ ul {
 .space-above-lg {
   margin-top: 100px;
 }
+.space-above-xl {
+  margin-top: 200px;
+}
 .space-below-sm {
   margin-bottom: 15px;
 }
@@ -184,6 +201,9 @@ ul {
 }
 .space-below-lg {
   margin-bottom: 100px;
+}
+.space-below-xl {
+  margin-bottom: 200px;
 }
 .nospace {
   margin: 0;
@@ -225,6 +245,15 @@ a.text-yellow:hover,
 a.text-yellow:focus {
   color: #ffca33;
   outline-color: #ffca33;
+  text-decoration: none;
+}
+.text-darkgreen {
+  color: #92be00;
+}
+a.text-darkgreen:hover,
+a.text-darkgreen:focus {
+  color: #7fa600;
+  outline-color: #7fa600;
   text-decoration: none;
 }
 .list-wide li {

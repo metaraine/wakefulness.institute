@@ -49,9 +49,14 @@ block content
 						.sprite-icon-calendar-gray.block
 						h2.text-caption Dates
 					ul.list-wide
-						li Begins the 3rd week of August 
+						li 30 days
+						li
+							span.text August 2014 group is full!
+							.text-sm 
+								a.text-darkgreen(href='#subscribe') Subscribe to the mailing list below 
+								| to be notified of the next offering!
+						//- li Begins the 3rd week of August 
 							.text-sm Day-of-the-week TBD
-						li 30 days total
 
 	//- facilitators
 	.theme-dark
@@ -109,13 +114,32 @@ block content
 					h3 Scholarship: $0-34
 					p.text-sm Scholarships will be awarded upon request, no questions asked. Contribute what you can. Don’t let financial need prevent you from participating in this beneficial practice!
 
-			.center.wide.space-above-md: div
+	#subscribe.theme-pale
+		.container-narrow.vpad-xl.pad
+			.center.wide.vpad-sm
+				h2 Registration for the August 2014 group is closed!
+			.center.wide
+				p.text-sm Subscribe to the mailing list to get contacted about the next group:
+
+			.vpad-md
+				form(action='//institute.us8.list-manage.com/subscribe/post?u=7ee4ab397f3a604f4299bdeaa&id=252665f9ef', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+					.row
+						.col-xs-8
+							.form-group
+								input.form-control(type='email' placeholder='Enter Your Email' name='EMAIL' required)
+						.col-xs-4
+							div(style='position: absolute; left: -5000px;')
+								input(type='text' name='b_7ee4ab397f3a604f4299bdeaa_252665f9ef' tabindex='-1' value='')
+							button.btn.btn-block Submit
+
+			//- .center.wide.space-above-md: div
 				h1 Starts the 3<sup>rd</sup> week of August, 2014!
 				p.text-sm Exact meeting time will be based on participants' availability.
 
-			+paypal('Register')
+			//- +paypal('Register')
 
-	.theme-pale.text-sm
+	//- Mailing List Signup
+	//- #subscribe.theme-pale.text-sm
 		.container-narrow.vpad-md.pad
 			p Can't make it this time? 
 				br.visible-xs
